@@ -1,40 +1,40 @@
 header{
-    border:  10px;
     color: aqua;
     background-color: bisque;
-    text-align: justify;
+    text-align: center;
 }
 
 #main{
     background-color: blanchedalmond;
-    text-align: left;
+    text-align:center;
     color: blue;
-    height: 10px;
-    width:30 px;
+    height: 100px;
+    width:500 px;
+    border: 5px solid black;
 }
 #nav-bar{
-     background-color: plum;
+    background-color: plum;
     text-align: center;
     color: yellowgreen;
-    height: 10px;
-    width:30 px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    height: 100px;
+    width:500 px;
+    border: solid black 5px;
+
 }
 #content{
     background-color: paleturquoise;
     text-align: left;
     color: red;
-    height: 15px;
-    width:25 px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    height: 100px;
+    width:500 px;
+    border: solid black 5px;
+   
 }
 
 .nav-btn{
     background-color: pink;
-    background-origin: 2px black dotted;
+    border: 2px black dotted;
     color: blue;
-    height: 50px;
-    width:30 px;
+    height: 100x;
+    width:500px;
 }
