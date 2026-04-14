@@ -2,6 +2,13 @@ header{
     color: aqua;
     background-color: bisque;
     text-align: center;
+    animation-name: textColorChange;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    
+    animation-name: sizeChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 #main{
@@ -27,6 +34,11 @@ header{
     height: 300px;
     width:400 px;
     border: solid black 5px;
+
+    animation-name:percentageAnimation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    font-family:'Playwrite Ireland';
    
 }
 
@@ -36,4 +48,78 @@ header{
     color: blue;
     height: 300px;
     width:400px;
+}
+
+
+/* Animation
+keyframes define an animation*/
+@keyframes textColorChange{
+    from{
+        color:pink
+    }
+    to{
+        color: mediumseagreen
+    }
+}
+
+@keyframes sizeChange{
+    from{
+        size: 30px;
+    }
+    to{
+        size:80px;
+    }
+}
+
+@keyframes percentageAnimation{
+    0%{
+        background-color: aqua;
+        font-size: 0px;
+    }
+    10%{
+        background-color: darkcyan;
+        border: 5px;
+        font-size: 10px;
+    }
+    11%{
+        background-color: fuchsia;
+        border: 5px double forestgreen;
+        font-size: 10px;
+    }
+    21%{
+        background-color: aquamarine;
+        border: 10px double palegoldenrod;
+        font-size: 10px;
+    }
+    48%{
+        background-color: white;
+        border: 0px;
+        font-size: 0px;
+    }
+    60%{
+        background-color: lime;
+        border: 10% double indigo;
+        font-size: 20%;
+    }
+    67%{
+        background-color: salmon;
+        border: 5px double palegoldenrod;
+        font-size: 10px;
+    }
+    0%{
+        background-color: aqua;
+        font-size: 0px;
+    }
+
+    }
+#header:hover{
+    font-size: 100px;
+}
+a:visited{
+    color: blue;
+}
+#content:hover{
+     animation-name:percentageAnimation;
+     animation-duration: 12s;
+     animation-iteration-count: infinite;
 }
