@@ -1,0 +1,139 @@
+
+body{
+    background: pink;
+    font-family:"Poppins", "Segoe UI", Arial, sans-serif;
+    color: purple;
+    margin:0px;
+    padding: 0px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: magenta;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 3px solid lightpink;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+
+#nav {
+    text-align: center;
+    background: lightpink;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#nav a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#nav a:hover {
+    background: magenta;
+    color: white;
+}
+
+
+#content {
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+
+.character {
+    background: pink;
+    border: 2px solid lightpink;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+.character img {
+    border-radius: 10px;
+    border: 2px solid magenta;
+}
+
+
+.info {
+    background: lightpink;
+    border-left: 5px solid magenta;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.info ul {
+    list-style: heart;
+}
+
+.info li {
+    margin-bottom: 5px;
+}
+
+
+#footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#footer a {
+    color: darkorchid;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: magenta;
+}
+
+
+a {
+    color: darkorchid;
+    font-weight: bold;
+}
+
+a:hover {
+    color: magenta;
+}
+
+
+
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
