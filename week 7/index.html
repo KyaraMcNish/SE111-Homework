@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Kyara McNish">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Week 7 | More JavaScript</h1>
+<hr>
+   <!-- Setting up display-->
+    <h2> Current Number</h2>
+    <h2 id ="number"> 0</h2> 
+   
+ <hr>
+<!-- Setting up buttons-->
+    <input type="button" id="increment" value="Increase">
+    <input type="button"  id="decrement"value="Decrease">
+
+
+    <script>
+    var numberText =document.querySelector("#number")
+    var increaseButton = document.querySelector("#increment")
+    var decraseButton = document.querySelector("#decrement")
+
+    var currentNumber = 0;
+
+    function addtoNumber(){
+        currentNumber++;
+        numberText.innerHTML =currentNumver
+    }
+    function subtractfromNumber(){
+        currentNumber--;
+        numbertext.innerHTML =currentNumber
+    }
+    increaseButton.addEventListener('click',addtoNumber)
+    decraseButton.addEventListener('click',subtractfromNumber)
+
+
+    </script>
+</body>
+</html>
