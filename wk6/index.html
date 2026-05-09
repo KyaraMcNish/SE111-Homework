@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluclator Homework</title>
+</head>
+<body>
+    <script>
+        function grossPay(a,b){
+            return (a*b)*2
+        }
+        function netPay(c,d){
+            return c-d
+        }
+
+        var hourlyWage= Number(prompt("What's your hourly wage?"))
+        var hoursWorked=Number(prompt("How many hours did you work?"))
+
+        var gross = grossPay(hourlyWage,hoursWorked)
+        var taxes = gross *.20
+        var takeHome = netPay(gross,taxes)
+
+        console.log("Your Gross Pay is:$" ,gross)
+        console.log("You paid:$",taxes," in taxes")
+        console.log("Your Net Pay is:$" ,takeHome)
+        
+
+    </script>
+</body>
+</html>
