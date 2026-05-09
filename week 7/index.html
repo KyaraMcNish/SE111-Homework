@@ -17,6 +17,19 @@
 <!-- Setting up buttons-->
     <input type="button" id="increment" value="Increase">
     <input type="button"  id="decrement"value="Decrease">
+    <br>
+    <br>
+    <br>
+    <div id="jokecontainer">
+        <div id="question">
+            <h2> Why did the scare crow get a raise?</h2>
+        </div>
+        <div id="answer">
+            <input type="button" id="giveAnswer" value="Why?">
+
+        </div>
+
+    </div>
 
 
     <script>
@@ -28,16 +41,22 @@
 
     function addtoNumber(){
         currentNumber++;
-        numberText.innerHTML =currentNumver
+        numberText.innerHTML =currentNumber
     }
     function subtractfromNumber(){
         currentNumber--;
-        numbertext.innerHTML =currentNumber
+        numberText.innerHTML =currentNumber
     }
     increaseButton.addEventListener('click',addtoNumber)
     decraseButton.addEventListener('click',subtractfromNumber)
 
+    var giveJokeAnswer =document.querySelector("#giveAnswer")
+    var answerContainer =document.querySelector("#answer")
 
+    function giveAnswer(){
+        answerContainer.innerHTML+= "<h3> He was OUTSTANDING in his field </h3>";
+    }
+    giveJokeAnswer.addEventListener("click", giveAnswer)
     </script>
 </body>
 </html>
