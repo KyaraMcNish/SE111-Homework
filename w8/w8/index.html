@@ -70,7 +70,7 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first:firstInput.value,
+				first:firsttInput.value,
 				last:lastInput.value
 
             }//end of person object
@@ -79,7 +79,7 @@
 
 
 			//Add the person object into the people array by using the .push() array method.
-			people.push(person);
+			
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -112,16 +112,15 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-					output+= key.toUpperCase() + ":" + people[i][key] + "<br>";
+					output+=key.toUpperCase()+":" people[i][key]+"<br>"
 				
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				output+="<hr>";
+				output+="<hr>"
 
 
 			}//end of loop going through people array to edit 'output'
-			outputDiv.innerHTML=output;
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
