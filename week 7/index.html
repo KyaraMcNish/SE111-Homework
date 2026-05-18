@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Kyara McNish">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Week 7 | More JavaScript</h1>
+<hr>
+   <!-- Setting up display-->
+    <h2> Current Number</h2>
+    <h2 id ="number"> 0</h2> 
+   
+ <hr>
+<!-- Setting up buttons-->
+    <input type="button" id="increment" value="Increase">
+    <input type="button"  id="decrement"value="Decrease">
+    <br>
+    <br>
+    <br>
+    <div id="jokecontainer">
+        <div id="question">
+            <h2> Why did the scare crow get a raise?</h2>
+        </div>
+        <div id="answer">
+            <input type="button" id="giveAnswer" value="Why?">
+
+        </div>
+
+    </div>
+
+
+    <script>
+    var numberText =document.querySelector("#number")
+    var increaseButton = document.querySelector("#increment")
+    var decraseButton = document.querySelector("#decrement")
+
+    var currentNumber = 0;
+
+    function addtoNumber(){
+        currentNumber++;
+        numberText.innerHTML =currentNumber
+    }
+    function subtractfromNumber(){
+        currentNumber--;
+        numberText.innerHTML =currentNumber
+    }
+    increaseButton.addEventListener('click',addtoNumber)
+    decraseButton.addEventListener('click',subtractfromNumber)
+
+    var giveJokeAnswer =document.querySelector("#giveAnswer")
+    var answerContainer =document.querySelector("#answer")
+
+    function giveAnswer(){
+        answerContainer.innerHTML+= "<h3> He was OUTSTANDING in his field </h3>";
+    }
+    giveJokeAnswer.addEventListener("click", giveAnswer)
+    </script>
+</body>
+</html>

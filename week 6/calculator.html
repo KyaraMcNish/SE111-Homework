@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Kyara McNish">
+    <title>Calculator Lab</title>
+</head>
+<body>
+    <script>
+        function add(x,y){
+            return x+y
+        }
+        function subtract(a,b){
+            return a-b
+        }
+        function multiply(c,d){
+            return c*d
+        }
+        function divide(e,f){
+            return e/f
+        }
+        var numOne= Number(prompt("Please enter your first number"))
+        var numTwo=Number(prompt("Please enter your second number"))
+        var decide=prompt("Would you like to add, multiply,subtract or divide?")
+
+        if (decide === "add"){
+           var sum=add(numOne,numTwo)
+           console.log(sum)
+        }
+        else if(decide === "multiply"){
+            var product=multiply(numOne,numTwo)
+            console.log(product)
+        }
+        else if(decide ==="subtract"){
+            var difference=subtract(numOne,numTwo)
+            console.log(difference)
+        }
+        else if(decide === "divide"){
+            var quotient=divide(numOne,numTwo)
+            console.log(quotient)
+        }
+    </script>
+</body>
+</html>
