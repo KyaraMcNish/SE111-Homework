@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9|Parent and Child Element</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="divContainer">
+        <p id="removeSample"> we're removing this tag.</p>
+        <br>
+        <input type="button" id="killtheChild" value="Kill the Child" class="bigText">
+        <br>
+        <div id="foodContainer">
+            <img id =food src="https://tse4.mm.bing.net/th/id/OIP.NBFOhfVgCu_jxc-Lm0G6QwHaE8?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3" style="width:45%" ;height:45%>
+            <input type="button" id="changeFood" value="I like patty better">
+
+
+        </div>
+
+    </div>
+    <script>
+        var divContainer=document.querySelector("#divContainer")//gets div container
+        var pTag=document.createElement('p')// creates pTag//elemts created this way are empty(no info in them thus they don't show)
+        pTag.innerHTML="This was created in JS"// adds text to the pTag
+        pTag.setAttribute('class','bigText')// id,class,style,source,href,(this is setting the class)
+        pTag.setAttribute('style',"border:1px solid black")// this attribute sets the border
+        divContainer.appendChild(pTag)
+
+
+        // removing text
+        function removeTheChild(){
+            var jadon = document.querySelector("#removeSample")//calls the parent tag
+            divContainer.removeChild(jadon)//calls child tag
+        }
+        var killButton =document.querySelector("#killtheChild")
+        killButton.addEventListener('click',removeTheChild)
+
+
+        function iLikePatty(){
+            var changeFood =document.querySelector("#food")
+            changeFood.setAttribute("src","cheese-patty.jpg")
+        }
+        var changeButton =document.querySelector("#changeFood")
+        changeFood.addEventListener("click", iLikePatty)
+    </script>
+</body>
+</html>
